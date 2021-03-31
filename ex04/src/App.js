@@ -17,7 +17,6 @@ class App extends Component {
             },
         ],
     }
-}
 removeCharacter = (index) => {
     const {characters} = this.state;
     this.setState({
@@ -25,8 +24,8 @@ removeCharacter = (index) => {
             return i !== index;
         }),
     })
-}
-render() { 
+};
+render() {
     const { characters } = this.state;
     return (
         <div className="container">
@@ -34,6 +33,6 @@ render() {
             removeCharacter={this.removeCharacter} />
         </div>
     );
+    }
 }
-
 export default App;
